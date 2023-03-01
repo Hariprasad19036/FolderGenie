@@ -1,4 +1,3 @@
-import sys
 import os
 from pathlib import Path
 
@@ -53,14 +52,3 @@ class FolderGenie:
         
     def generate_folders(self):
         self.create_directories(self.tree, os.getcwd())
-
-if __name__ == "__main__":
-    # Check for the correct number of arguments
-    if len(sys.argv) != 2:
-        print('Incorrect number of arguments')
-        print('Syntax: python3 foldergenie.py path/to/your/input_file')
-        sys.exit()
-
-    # Generate the folders using the input file
-    genie = FolderGenie(sys.argv[1])
-    genie.generate_folders()
