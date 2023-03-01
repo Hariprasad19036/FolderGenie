@@ -2,14 +2,23 @@
 ### Are you fed up with the time-consuming task of creating multiple folders for your project? Say goodbye to that tedious task and welcome FolderGenie - the ultimate solution to your folder creation needs!
 FolderGenie is a Python script that reads a text file containing a list of folder names and creates the corresponding directory structure on the user's computer. The text file should contain one folder name per line. The user can specify the name of the input text file as a command line argument when running the script.
 
+# Installation
+To install FolderGenie, open cmd and run
+
+```python
+pip install foldergenie==4.0.0
+```
+
 # Usage
 To use FolderGenie, run the script `foldergenie.py` with the name of the input text file as a command line argument:
 
 ```python
-python foldergenie.py input.txt
+foldergenie input_file.txt
 ```
 
 # Example Input
+
+input_file.txt
 ```
 parent1
 child1
